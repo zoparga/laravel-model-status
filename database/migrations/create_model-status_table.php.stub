@@ -1,0 +1,25 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+return new class extends Migration
+{
+    public function up()
+    {
+        Schema::create('model_status_table', function (Blueprint $table) {
+            $table->id();
+
+            $table->unsignedBigInteger('model_statuseable_id');
+            $table->string('model_statuseable_type');
+
+            $table->string('name')->nullable();
+            $table->integer('order')->default(1);
+            $table->tinyInteger('is_enabled')->default(1);
+
+            $table->timestamps();
+            $table->softDeletes();
+        });
+    }
+};
