@@ -1,6 +1,6 @@
 {
     "name": "zoparga/laravel-model-status",
-    "description": "Add many status to many model with a single trait. E.g.: many shipping address for a customer.",
+    "description": "Add many status to many model with a single trait. E.g.: many status for a customer.",
     "keywords": [
         "zoparga",
         "laravel",
@@ -17,8 +17,8 @@
     ],
     "require": {
         "php" : "^7.3|^8.0",
-        "spatie/laravel-package-tools": "^1.4.3",
-        "illuminate/contracts": "^8.37"
+        "spatie/laravel-package-tools": "^1.4.3"
+
     },
     "require-dev": {
         "nunomaduro/collision": "^5.3",
